@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/Quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/super-metroid-title.ttf">
+
+    <title>Arcade Ana Cacho</title>
+    <link rel="icon" type="image/x-icon" href="/img/arcade-machine.png">
+
+</head>
+
+<body>
+
+    <section class="scan-bar">
+        <div class="scan"></div>
+    </section>
+
+    <section class="splash-screen load">
+
+        <div class="top grey-with-red">
+            <p class="player1">1-up<span>01</span></p>
+            <p class="score">hi-score<span>12000</span></p>
+            <p class="player2">2-up<span>00</span></p>
+        </div>
+
+        <div class="titulo move quiz-color" style="padding-top: 6vh;">
+            <h1>tpsi quiz</h1>
+        </div>
+
+        <div class="question purple-with-blue">
+            <form method="POST" class="is-not-results" autocomplete="off">
+
+                <fieldset>
+                    <legend>1. Quem no primeiro dia na atec partiu um quadro ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[0]" id="answer-0-0" value="1" required>
+                            <label for="answer-0-0" class="answer__item ">
+                                1. Fábio
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+                            <label for="answer-0-1" class="answer__item answer__item--is-correct">
+                                2. Nandinho
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[0]" id="answer-0-2" value="1" required>
+                            <label for="answer-0-2" class="answer__item ">
+                                3. Trocato
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[0]" id="answer-0-3" value="1" required>
+                            <label for="answer-0-3" class="answer__item ">
+                                4. Nifili
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Quem é o primo da namorada do fábio ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[1]" id="answer-1-0" value="1" required>
+                            <label for="answer-1-0" class="answer__item ">
+                                1. Cristiano Ronaldo
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+                            <label for="answer-1-1" class="answer__item ">
+                                2. Prof. Francisco
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[1]" id="answer-1-2" value="1" required>
+                            <label for="answer-1-2" class="answer__item answer__item--is-correct">
+                                3. Trocato
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[1]" id="answer-1-3" value="1" required>
+                            <label for="answer-1-3" class="answer__item ">
+                                4. Rosalia
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Como se chama a ultima fila ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[2]" id="answer-2-0" value="1" required>
+                            <label for="answer-2-0" class="answer__item ">
+                                1. Quarteto fantastico
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+                            <label for="answer-2-1" class="answer__item answer__item--is-correct">
+                                2. Fila do churasco
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[2]" id="answer-2-2" value="1" required>
+                            <label for="answer-2-2" class="answer__item ">
+                                3. Backdoor
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[2]" id="answer-2-3" value="1" required>
+                            <label for="answer-2-3" class="answer__item ">
+                                4. Porta dos fundos
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Quem está sempre atrasado ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[3]" id="answer-3-0" value="1" required>
+                            <label for="answer-3-0" class="answer__item ">
+                                1. Jose cid
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[3]" id="answer-3-1" value="1" required>
+                            <label for="answer-3-1" class="answer__item ">
+                                2. Ricardo
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[3]" id="answer-3-2" value="1" required>
+                            <label for="answer-3-2" class="answer__item ">
+                                3. Claudio
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[3]" id="answer-3-3" value="1" required>
+                            <label for="answer-3-3" class="answer__item answer__item--is-correct">
+                                4. Pedro
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Quem está sempre escuro nas aulas online ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[4]" id="answer-4-0" value="1" required>
+                            <label for="answer-4-0" class="answer__item answer__item--is-correct">
+                                1. Daniel
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[4]" id="answer-4-1" value="1" required>
+                            <label for="answer-4-1" class="answer__item ">
+                                2. Wilson
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[4]" id="answer-4-2" value="1" required>
+                            <label for="answer-4-2" class="answer__item ">
+                                3. Bernardo
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[4]" id="answer-4-3" value="1" required>
+                            <label for="answer-4-3" class="answer__item ">
+                                4. Gonçalo
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. O que é brasileiro e rima com nazi ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[5]" id="answer-5-0" value="1" required>
+                            <label for="answer-5-0" class="answer__item ">
+                                1. Bugatti
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[5]" id="answer-5-1" value="1" required>
+                            <label for="answer-5-1" class="answer__item ">
+                                2. Hot tea
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[5]" id="answer-5-2" value="1" required>
+                            <label for="answer-5-2" class="answer__item ">
+                                3. Antonio
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[5]" id="answer-5-3" value="1" required>
+                            <label for="answer-5-3" class="answer__item answer__item--is-correct">
+                                4. Benassi
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>7. Quem não gosta de plantas ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[6]" id="answer-6-0" value="1" required>
+                            <label for="answer-6-0" class="answer__item answer__item--is-correct">
+                                1. Henrique
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[6]" id="answer-6-1" value="1" required>
+                            <label for="answer-6-1" class="answer__item ">
+                                2. Nito
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[6]" id="answer-6-2" value="1" required>
+                            <label for="answer-6-2" class="answer__item ">
+                                3. Vasco
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[6]" id="answer-6-3" value="1" required>
+                            <label for="answer-6-3" class="answer__item ">
+                                4. D. Afonso Henriques
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>8. De quem é a ilustre frase "Isso está errado"</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[7]" id="answer-7-0" value="1" required>
+                            <label for="answer-7-0" class="answer__item answer__item--is-correct">
+                                1. Zé B.
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[7]" id="answer-7-1" value="1" required>
+                            <label for="answer-7-1" class="answer__item ">
+                                2. Filipe
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[7]" id="answer-7-2" value="1" required>
+                            <label for="answer-7-2" class="answer__item ">
+                                3. Benassi
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[7]" id="answer-7-3" value="1" required>
+                            <label for="answer-7-3" class="answer__item ">
+                                4. Fabio
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>9. Quem trás sempre uma maçã para a aula ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[8]" id="answer-8-0" value="1" required>
+                            <label for="answer-8-0" class="answer__item ">
+                                1. Nito
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[8]" id="answer-8-1" value="1" required>
+                            <label for="answer-8-1" class="answer__item ">
+                                2. Daniel
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[8]" id="answer-8-2" value="1" required>
+                            <label for="answer-8-2" class="answer__item answer__item--is-correct">
+                                3. Zé
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[8]" id="answer-8-3" value="1" required>
+                            <label for="answer-8-3" class="answer__item ">
+                                4. Vasco
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>10. Qual é a especiaria favorita do Ruben ?</legend>
+                    <div class="answers grey-with-red">
+                        <div class="answer">
+                            <input type="radio" name="answers[9]" id="answer-9-0" value="1" required>
+                            <label for="answer-9-0" class="answer__item ">
+                                1. Açafrão
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[9]" id="answer-9-1" value="1" required>
+                            <label for="answer-9-1" class="answer__item answer__item--is-correct">
+                                2. Canela
+                                <span class="answer__reveal-text"></span>
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[9]" id="answer-9-2" value="1" required>
+                            <label for="answer-9-2" class="answer__item ">
+                                3. Camomila
+
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <input type="radio" name="answers[9]" id="answer-9-3" value="1" required>
+                            <label for="answer-9-3" class="answer__item ">
+                                4. Colorau
+
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="message yellow-with-darkyellow">
+                    <p>Your Score: <span class="score" data-question-count="10"></span></p>
+                </div>
+                    <button type="reset">Clear answers</button>
+            </form>
+        </div>
+
+    </section>
+</body>

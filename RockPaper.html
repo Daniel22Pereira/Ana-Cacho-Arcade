@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/RockPaper.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/super-metroid-title.ttf">
+
+    <title>Arcade Ana Cacho</title>
+    <link rel="icon" type="image/x-icon" href="/img/arcade-machine.png">
+
+</head>
+
+<body>
+
+    <section class="scan-bar">
+        <div class="scan"></div>
+    </section>
+
+    <section class="splash-screen load">
+
+        <div class="top grey-with-red">
+            <p class="player1">1-up<span>00</span></p>
+            <p class="score">hi-score<span>69420</span></p>
+            <p class="player2">2-up<span>00</span></p>
+        </div>
+        
+        <h1 class="titulo rockPaper-color move" style="margin-top: 1vh;">Rock Paper Scissors</h1>
+
+        <form>
+
+            <input type="radio" id="rock-rock" name="rock-paper-scissors">
+            <input type="radio" id="rock-paper" name="rock-paper-scissors">
+            <input type="radio" id="rock-scissors" name="rock-paper-scissors">
+            <input type="radio" id="paper-rock" name="rock-paper-scissors">
+            <input type="radio" id="paper-paper" name="rock-paper-scissors">
+            <input type="radio" id="paper-scissors" name="rock-paper-scissors">
+            <input type="radio" id="scissors-rock" name="rock-paper-scissors">
+            <input type="radio" id="scissors-paper" name="rock-paper-scissors">
+            <input type="radio" id="scissors-scissors" name="rock-paper-scissors">
+          
+            <div>
+              <div id="hands">
+                <div class="hand" id="computer-hand">
+                  <div class="fist"></div>
+                  <div class="finger finger-1"></div>
+                  <div class="finger finger-2"></div>
+                  <div class="finger finger-3"></div>
+                  <div class="finger finger-4"></div>
+                  <div class="thumb"></div>
+                  <div class="arm"></div>
+                </div>
+          
+                <div class="hand" id="user-hand">
+                  <div class="fist"></div>
+                  <div class="finger finger-1"></div>
+                  <div class="finger finger-2"></div>
+                  <div class="finger finger-3"></div>
+                  <div class="finger finger-4"></div>
+                  <div class="thumb"></div>
+                  <div class="arm"></div>
+                </div>
+                
+                <div id="icons">
+                  <div>
+                    <label for="rock-rock">✊</label>
+                    <label for="paper-rock">✊</label>
+                    <label for="scissors-rock">✊</label>
+                  </div>
+                  <div>
+                    <label for="rock-paper">🖐️</label>
+                    <label for="paper-paper">🖐️</label>
+                    <label for="scissors-paper">🖐️</label>
+                  </div>
+                  <div>
+                    <label for="rock-scissors">✌</label>
+                    <label for="paper-scissors">✌</label>
+                    <label for="scissors-scissors">✌</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="rockPaper-color" id="message">
+              <h2></h2>
+            </div>
+          
+          </form>
+
+        <div class="credit" style="padding-top: 72vh;">
+            <a class="grey-with-red">Credit <span class="yellow-with-darkyellow">01</span></a>
+        </div>
+    </section>
+    
+</body>
+
+</html>

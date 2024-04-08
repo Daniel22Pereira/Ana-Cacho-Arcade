@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: "Press Start 2P", monospace;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* //////////////////////////////// FONTS /////////////////////////////////// */
+
+
+@font-face {
+    font-family: metroid-font;
+    src: url(/fonts/super-metroid-title.ttf);
+}
+
+/* //////////////////////////////// ANIMACOES /////////////////////////////////// */
+
+
+/* animacao que simula o load de uma arcade */
+.load {
+    animation: load 800ms 500ms backwards;
+}
+
+@keyframes load {
+    0% {
+        filter: blur(2px) hue-rotate(-150deg);
+    }
+}
+
+.splash-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* animacao da scan bar */
+.scan-bar {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.scan-bar {
+    animation: scan 1.8s infinite;
+}
+
+.scan {
+    height: 20px;
+    width: 100%;
+    background-color: rgba(88, 88, 94, 0.264);
+}
+
+@keyframes scan {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+/* animacao rainbow */
+.move {
+    animation: move 50s linear infinite;
+}
+
+@keyframes move {
+    100% {
+        background-position: 0 30em;
+    }
+}
+
+/* //////////////////////////////// EFEITOS /////////////////////////////////// */
+
+
+/* efeito de ecra de arcade, poe uma gradiente linear*/
+body::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: repeating-linear-gradient(#0D122B, #0D122B 2px, #565B73 2px, #565B73 4px);
+    opacity: 0.2;
+    z-index: 100;
+    content: "";
+    pointer-events: none;
+}
+
+
+/* //////////////////////////////// CORES /////////////////////////////////// */
+
+
+.gay-color {
+    background-image: -webkit-linear-gradient(#fd004c 16.7%,
+            #fe9000 16.7%,
+            #fe9000 33.4%,
+            #fff020 33.4%,
+            #fff020 50.1%,
+            #3edf4b 50.1%,
+            #3edf4b 66.8%,
+            #3363ff 66.8%,
+            #3363ff 83.5%,
+            #b102b7 83.5%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.connect4-color {
+    background: -webkit-linear-gradient(#ffd000, #ff6a00, #ff6a00, #ffd000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 60px rgb(255, 242, 0);
+}
+
+.rockPaper-color {
+    background: -webkit-linear-gradient(#ffff00, #9500ff, #9500ff, #ffff00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 60px rgb(255, 242, 0);
+}
+
+.quiz-color {
+    background: -webkit-linear-gradient(#f700ff, #00ffff, #00ffff, #f700ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 60px #f700ff;
+}
+
+.main-color {
+    background: -webkit-linear-gradient(rgb(255, 18, 18) 30%, rgb(255, 215, 38));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 90px rgb(211, 14, 14);
+}
+
+.grey-with-red {
+    color: rgb(192, 192, 192);
+    text-shadow: 2px 2px 0 rgb(192, 11, 11);
+}
+
+.purple-with-blue {
+    color: rgb(147, 154, 255);
+    text-shadow: 2px 2px 0 rgb(47, 61, 255);
+}
+
+.yellow-with-darkyellow {
+    color: rgb(226, 179, 24);
+    text-shadow: 0 2px 0 rgb(107, 77, 11), 2px 0 0 rgb(151, 109, 19),
+        2px 2px 0 rgb(151, 109, 19);
+}
+
+.yellow {
+    color: rgb(226, 179, 24);
+}
+
+/* cor quando seleciona alguma coisa */
+::selection {
+    background: #b4fdff;
+}
+
+
+/* //////////////////////////////// TOP /////////////////////////////////// */
+
+
+.top {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.top span {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+/* //////////////////////////////// TITULO /////////////////////////////////// */
+
+
+.titulo {
+    margin: auto;
+    font-family: 'metroid-font';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 18vh;
+    font-size: 4rem;
+    max-width: 100vw;
+    letter-spacing: 2px;
+}
+
+.tilt {
+    position: relative;
+    height: 35vh;
+    max-width: 600px;
+    transform: perspective(300px) rotatex(25deg);
+}
+
+
+/* //////////////////////////////// MIDDLE /////////////////////////////////// */
+
+
+/* tira a decoracao de texto e da a cor do parente */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 12vh;
+    margin-bottom: 14vh;
+}
+
+.middle a {
+    margin-bottom: 1rem;
+}
+
+
+/* //////////////////////////////// SETAS /////////////////////////////////// */
+
+.arrow i {
+    visibility: hidden;
+}
+
+.arrow:hover i {
+    visibility: visible;
+    margin-right: 20px;
+}
+
+
+/* //////////////////////////////// BOTTOM /////////////////////////////////// */
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secret {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    right: 95px;
+    top: 18px;
+    margin-left: 49vw;
+    margin-right: 49vw;
+    color: transparent;
+}
+
+.credit {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: end;
+    right: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* //////////////////////////////// Secret /////////////////////////////////// */
+
+
+.video-box {
+    max-width: 60vw;
+    max-height: 62vh;
+}
+
+.emoji {
+    font-size: 100px;
+    display: flex;
+    position: relative;
+    max-height: 1px;
+    justify-content: start;
+    margin-left: 2vw;
+}
+
+.emoji2 {
+    font-size: 100px;
+    display: flex;
+    position: relative;
+    max-height: 1px;
+    justify-content: end;
+    margin-right: 2vw;
+}
+
+
+/* //////////////////////////////// COMPATIBILIDADE /////////////////////////////////// */
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .top {
+        padding-top: 7px;
+    }
+
+    .titulo {
+        height: 20vh;
+        font-size: 2rem;
+        max-width: 100vw;
+        letter-spacing: 2px;
+        margin-bottom: -60px;
+    }
+
+    .tilt {
+        height: 20vh;
+        max-width: 100vw;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .middle {
+        height: 20vh;
+        margin-top: 8vh;
+    }
+
+    .middle a {
+        margin-bottom: 0.8rem;
+    }
+
+    .credit {
+        right: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 1rem;
+    }
+    
+    .titulo {
+        height: 22vh;
+        font-size: 2.5rem;
+    }
+
+    .tilt {
+        height: 22vh;
+        max-width: 100vw;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}

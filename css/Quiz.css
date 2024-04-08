@@ -1,0 +1,92 @@
+.question *,
+.question {
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.question fieldset {
+    margin: 1rem;
+}
+
+.question .answer__item {
+    background-color: rgba(255, 255, 255, 0.07);
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    margin: 0.5rem;
+    transition: background .5s ease;
+}
+
+fieldset {
+    border: none;
+}
+
+legend{
+    line-height: 20px;
+}
+
+/* Esconde os butoes */
+.question input[type="radio"] {
+    display: none;
+}
+
+.question button[type="reset"] {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 10px 5px;
+    font-family: "Press Start 2P", monospace;
+
+    color: rgb(147, 154, 255);
+    text-shadow: 2px 2px 0 rgb(47, 61, 255);
+}
+
+/* poe a amarelo a resposta certa  */
+.question :valid .answer__item--is-correct {
+    background-color: #3db540;
+    transition: all .5s ease;
+}
+
+/* poe a vermelho se respondeu errado */
+.question :checked+.answer__item {
+    color: #ffffff;
+    background-color: #9b2626;
+    transition: all .5s ease;
+}
+
+/* poe verde se respondeu certo */
+.question :checked+.answer__item--is-correct {
+    background-color: #3db540;
+    transition: all .5s ease;
+}
+
+/* nao deixa mudar a escolhida */
+.question :valid {
+    user-select: none;
+}
+
+.question :valid+.answer__item {
+    pointer-events: none;
+}
+
+/* score */
+.question form {
+    counter-reset: quiz-score;
+}
+
+.question :checked+.answer__item--is-correct {
+    counter-increment: quiz-score;
+}
+
+.question .score:after {
+    content: counter(quiz-score) "/" attr(data-question-count);
+}
+
+/* mensagem do score */
+.question .message {
+    display: none;
+    text-align: center;
+}
+
+.question form:valid .message {
+    display: block;
+}
